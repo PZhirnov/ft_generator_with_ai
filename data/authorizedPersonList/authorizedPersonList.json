@@ -1,0 +1,473 @@
+{
+    "editForm": {
+        "layout": {
+            "verticalLayout": true
+        },
+        "components": [
+            {
+                "name": "formSection1",
+                "type": "FormSection",
+                "style": "{justify-content: center}",
+                "title": "Свойства документа",
+                "children": [
+                    {
+                        "name": "details1",
+                        "type": "Details",
+                        "style": "{width:70%; margin-left: 15%}\n",
+                        "title": "Общие сведения",
+                        "compact": true,
+                        "bordered": true,
+                        "children": [
+                            {
+                                "name": "row17",
+                                "type": "Row",
+                                "gutter": 8,
+                                "children": [
+                                    {
+                                        "name": "col21",
+                                        "type": "Col",
+                                        "children": [
+                                            {
+                                                "name": "subjectFullNameField",
+                                                "type": "ReferenceField",
+                                                "label": "Клиент",
+                                                "readOnly": false,
+                                                "dataField": "subject",
+                                                "addAllowed": true,
+                                                "fetchFields": "fullName,inn,cpp,mosCode,unc,srpsCode",
+                                                "displayField": "fullName",
+                                                "refAppObject": {
+                                                    "entity": "AppObject",
+                                                    "id": "reference.subject",
+                                                    "displayName": "Экономические субъекты"
+                                                },
+                                                "refreshAllowed": false,
+                                                "onlySystemFilters": false
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "row18",
+                                "type": "Row",
+                                "gutter": 8,
+                                "children": [
+                                    {
+                                        "name": "col22",
+                                        "span": 8,
+                                        "type": "Col",
+                                        "children": [
+                                            {
+                                                "name": "clientINNField",
+                                                "rows": 2,
+                                                "type": "TextField",
+                                                "label": "ИНН",
+                                                "maxRows": 2,
+                                                "readOnly": true,
+                                                "dataField": "subject.inn"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "col23",
+                                        "span": 8,
+                                        "type": "Col",
+                                        "children": [
+                                            {
+                                                "name": "clientKPPField",
+                                                "rows": 2,
+                                                "type": "TextField",
+                                                "label": "КПП",
+                                                "maxRows": 2,
+                                                "readOnly": true,
+                                                "dataField": "subject.cpp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "col41",
+                                        "span": 8,
+                                        "type": "Col",
+                                        "children": [
+                                            {
+                                                "name": "row20",
+                                                "type": "Row",
+                                                "children": [
+                                                    {
+                                                        "name": "textField3",
+                                                        "rows": 2,
+                                                        "type": "TextField",
+                                                        "label": "ОГРН",
+                                                        "maxRows": 2,
+                                                        "disabled": false,
+                                                        "readOnly": true
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "row19",
+                                "type": "Row",
+                                "gutter": 8,
+                                "children": [
+                                    {
+                                        "name": "col39",
+                                        "span": 8,
+                                        "type": "Col",
+                                        "children": [
+                                            {
+                                                "name": "textField1",
+                                                "rows": 2,
+                                                "type": "TextField",
+                                                "label": "УНК",
+                                                "maxRows": 2,
+                                                "readOnly": true,
+                                                "dataField": "subject.unc"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "col24",
+                                        "span": 8,
+                                        "type": "Col",
+                                        "children": [
+                                            {
+                                                "name": "clientOKATOField",
+                                                "rows": 2,
+                                                "type": "TextField",
+                                                "label": "Код по МР",
+                                                "maxRows": 2,
+                                                "readOnly": true,
+                                                "dataField": "subject.mosCode"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "col40",
+                                        "span": 8,
+                                        "type": "Col",
+                                        "children": [
+                                            {
+                                                "name": "textField2",
+                                                "rows": 2,
+                                                "type": "TextField",
+                                                "label": "Код СР",
+                                                "maxRows": 2,
+                                                "readOnly": true,
+                                                "dataField": "subject.srpsCode"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "collapsible": true,
+                        "headerBordered": true
+                    },
+                    {
+                        "name": "details2",
+                        "type": "Details",
+                        "style": "{width:70%; margin-left: 15%}\n",
+                        "title": "Уполномоченные лица",
+                        "compact": true,
+                        "bordered": true,
+                        "children": [
+                            {
+                                "name": "authorizedPersonInfoField",
+                                "type": "TableField",
+                                "listForm": {
+                                    "dataColumns": [
+                                        {
+                                            "title": "Фамилия",
+                                            "isMask": false,
+                                            "dataType": "STRING",
+                                            "sortable": true,
+                                            "dataField": "secondName",
+                                            "filterable": true,
+                                            "notGroupable": true,
+                                            "hideFilterOptions": false,
+                                            "rememberLastValues": false
+                                        },
+                                        {
+                                            "title": "Имя",
+                                            "isMask": false,
+                                            "dataType": "STRING",
+                                            "sortable": true,
+                                            "dataField": "firstName",
+                                            "filterable": true,
+                                            "notGroupable": true,
+                                            "hideFilterOptions": false,
+                                            "rememberLastValues": false
+                                        },
+                                        {
+                                            "title": "Отчество",
+                                            "isMask": false,
+                                            "dataType": "STRING",
+                                            "sortable": true,
+                                            "dataField": "patronymic",
+                                            "filterable": true,
+                                            "notGroupable": true,
+                                            "hideFilterOptions": false,
+                                            "rememberLastValues": false
+                                        },
+                                        {
+                                            "title": "СНИЛС",
+                                            "isMask": false,
+                                            "dataType": "STRING",
+                                            "sortable": true,
+                                            "dataField": "snils",
+                                            "filterable": true,
+                                            "notGroupable": true,
+                                            "hideFilterOptions": false,
+                                            "rememberLastValues": false
+                                        },
+                                        {
+                                            "title": "Должность",
+                                            "isMask": false,
+                                            "dataType": "STRING",
+                                            "sortable": true,
+                                            "dataField": "position",
+                                            "filterable": true,
+                                            "notGroupable": true,
+                                            "hideFilterOptions": false,
+                                            "rememberLastValues": false
+                                        },
+                                        {
+                                            "title": "Электронная почта",
+                                            "isMask": false,
+                                            "dataType": "STRING",
+                                            "sortable": true,
+                                            "dataField": "email",
+                                            "filterable": true,
+                                            "notGroupable": true,
+                                            "hideFilterOptions": false,
+                                            "rememberLastValues": false
+                                        },
+                                        {
+                                            "title": "Изменен",
+                                            "isMask": false,
+                                            "dataType": "STRING",
+                                            "sortable": true,
+                                            "dataField": "modified",
+                                            "filterable": true,
+                                            "notGroupable": true,
+                                            "hideFilterOptions": false,
+                                            "rememberLastValues": false
+                                        },
+                                        {
+                                            "title": "Создан",
+                                            "isMask": false,
+                                            "dataType": "STRING",
+                                            "sortable": true,
+                                            "dataField": "created",
+                                            "filterable": true,
+                                            "notGroupable": true,
+                                            "hideFilterOptions": false,
+                                            "rememberLastValues": false
+                                        },
+                                        {
+                                            "title": "Заблокирован",
+                                            "isMask": false,
+                                            "dataType": "STRING",
+                                            "sortable": true,
+                                            "dataField": "isBlock",
+                                            "filterable": true,
+                                            "notGroupable": true,
+                                            "hideFilterOptions": false,
+                                            "rememberLastValues": false
+                                        }
+                                    ],
+                                    "deleteCascadeEnable": false
+                                },
+                                "readOnly": false,
+                                "dataField": "authorizedPersonInfo",
+                                "suppressCollapse": true
+                            }
+                        ],
+                        "expandable": false,
+                        "collapsible": true,
+                        "headerBordered": true
+                    }
+                ]
+            }
+        ]
+    },
+    "listForm": {
+        "mode": "SPLIT",
+        "dataColumns": [
+            {
+                "title": "Наименование Клиента",
+                "isMask": false,
+                "dataType": "STRING",
+                "sortable": true,
+                "dataField": "subject",
+                "filterable": true,
+                "captionField": "fullName",
+                "notGroupable": true,
+                "hideFilterOptions": false,
+                "rememberLastValues": false
+            },
+            {
+                "title": "ИНН",
+                "isMask": false,
+                "dataType": "STRING",
+                "sortable": true,
+                "dataField": "subject.inn",
+                "filterable": true,
+                "notGroupable": true,
+                "hideFilterOptions": false,
+                "rememberLastValues": false
+            },
+            {
+                "title": "КПП",
+                "isMask": false,
+                "dataType": "STRING",
+                "sortable": true,
+                "dataField": "subject.cpp",
+                "filterable": true,
+                "notGroupable": true,
+                "hideFilterOptions": false,
+                "rememberLastValues": false
+            },
+            {
+                "title": "ОГРН/ОГРНИП",
+                "isMask": false,
+                "dataType": "STRING",
+                "sortable": true,
+                "dataField": "subject.ogrn",
+                "filterable": true,
+                "notGroupable": true,
+                "hideFilterOptions": false,
+                "rememberLastValues": false
+            },
+            {
+                "title": "УНК",
+                "isMask": false,
+                "dataType": "STRING",
+                "sortable": true,
+                "dataField": "subject.unc",
+                "filterable": true,
+                "notGroupable": true,
+                "hideFilterOptions": false,
+                "rememberLastValues": false
+            },
+            {
+                "title": "Код МР",
+                "isMask": false,
+                "dataType": "STRING",
+                "sortable": true,
+                "dataField": "subject.mosCode",
+                "filterable": true,
+                "notGroupable": true,
+                "hideFilterOptions": false,
+                "rememberLastValues": false
+            },
+            {
+                "title": "Код СР",
+                "isMask": false,
+                "dataType": "STRING",
+                "sortable": true,
+                "dataField": "subject.srpsCode",
+                "filterable": true,
+                "notGroupable": true,
+                "hideFilterOptions": false,
+                "rememberLastValues": false
+            },
+            {
+                "title": "Статус",
+                "isMask": false,
+                "dataType": "STRING",
+                "sortable": true,
+                "dataField": "state.code",
+                "filterable": true,
+                "notGroupable": true,
+                "hideFilterOptions": false,
+                "rememberLastValues": false
+            },
+            {
+                "title": "Изменен",
+                "isMask": false,
+                "dataType": "STRING",
+                "sortable": true,
+                "dataField": "modified",
+                "filterable": true,
+                "notGroupable": true,
+                "hideFilterOptions": false,
+                "rememberLastValues": false
+            },
+            {
+                "title": "Создан",
+                "isMask": false,
+                "dataType": "STRING",
+                "sortable": true,
+                "dataField": "created",
+                "filterable": true,
+                "notGroupable": true,
+                "hideFilterOptions": false,
+                "rememberLastValues": false
+            }
+        ],
+        "deleteCascadeEnable": false
+    },
+    "constUuid": "9a10a6f8-1086-4bea-8aff-63acfc380afd",
+    "dataModel": {
+        "isView": false,
+        "tableName": "PAAUTHORIZEDPERSONDOC",
+        "dataFields": [
+            {
+                "name": "name",
+                "static": true,
+                "dataType": "STRING",
+                "required": true,
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Наименование",
+                "dataConstraint": {},
+                "hideFilterOptions": false
+            },
+            {
+                "name": "subject",
+                "hidden": true,
+                "static": true,
+                "dataType": "REFERENCE",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Экономические субъекты",
+                "refAppObject": {
+                    "entity": "AppObject",
+                    "id": "reference.subject",
+                    "displayName": "Экономические субъекты"
+                },
+                "dataConstraint": {},
+                "hideFilterOptions": false
+            },
+            {
+                "name": "authorizedPersonInfo",
+                "static": true,
+                "dataType": "REFLIST",
+                "fetchMode": "NORMAL",
+                "displayName": "Уполномоченное лицо",
+                "refAppObject": {
+                    "entity": "AppObject",
+                    "id": "pa.authorizedPersonInfo",
+                    "displayName": "Уполномоченное лицо"
+                },
+                "dataConstraint": {},
+                "hideFilterOptions": false
+            }
+        ],
+        "displayName": {
+            "displayFields": "name"
+        },
+        "displayTooltip": {},
+        "isFullTextSearch": false,
+        "greenplumReplicatedOption": true
+    },
+    "extProperties": {},
+    "reportTemplates": [],
+    "editForms": []
+}
