@@ -2,6 +2,23 @@ from typing import List, Optional, Dict, Any, Union
 from pydantic import BaseModel, Field, validator, field_validator
 from datetime import datetime, date
 
+
+"""
+Ключевые особенности модели:
+    EditForm - описывает форму редактирования/создания с компонентами
+    ListForm - описывает таблицу для отображения списка записей
+    DataModel - описывает структуру и валидацию данных
+    Components - дополнительные компоненты (опционально)
+
+Модель включает:
+    Валидацию типов данных
+    Проверку обязательных полей
+    Согласованность между компонентами форм и dataModel
+    Кастомные валидаторы для бизнес-правил
+Поддержка различных типов полей и компонентов
+"""
+
+
 # Модель для компонента формы
 class Component(BaseModel):
     type: str = Field(..., description="Тип компонента (input, select, checkbox, etc.)")
