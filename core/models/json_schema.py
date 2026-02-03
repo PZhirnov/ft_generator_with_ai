@@ -92,21 +92,21 @@ class FieldModel(BaseModel):
 # Основная модель
 class ApplicationModel(BaseModel):
     editForm: EditForm = Field(..., description="Форма редактирования/создания записи")
-    listForm: ListForm = Field(..., description="Форма отображения списка записей")
-    dataModel: Dict[str, FieldModel] = Field(..., description="Модель данных")
-    components: Optional[List[Component]] = Field(None, description="Дополнительные компоненты")
-    metadata: Optional[Dict[str, Any]] = Field(None, description="Дополнительные метаданные")
-    version: Optional[str] = Field('1.0.0', description="Версия конфигурации")
-
-    @field_validator('dataModel')
-    def validate_data_model_consistency(cls, v, values):
-        """Проверка согласованности dataModel с компонентами форм"""
-        if 'editForm' in values:
-            edit_form = values['editForm']
-            for component in edit_form.components:
-                if component.name not in v:
-                    raise ValueError(f'Компонент {component.name} отсутствует в dataModel')
-        return v
+    # listForm: ListForm = Field(..., description="Форма отображения списка записей")
+    # dataModel: Dict[str, FieldModel] = Field(..., description="Модель данных")
+    # components: Optional[List[Component]] = Field(None, description="Дополнительные компоненты")
+    # metadata: Optional[Dict[str, Any]] = Field(None, description="Дополнительные метаданные")
+    # version: Optional[str] = Field('1.0.0', description="Версия конфигурации")
+    #
+    # @field_validator('dataModel')
+    # def validate_data_model_consistency(cls, v, values):
+    #     """Проверка согласованности dataModel с компонентами форм"""
+    #     if 'editForm' in values:
+    #         edit_form = values['editForm']
+    #         for component in edit_form.components:
+    #             if component.name not in v:
+    #                 raise ValueError(f'Компонент {component.name} отсутствует в dataModel')
+    #     return v
 
     class Config:
         schema_extra = {

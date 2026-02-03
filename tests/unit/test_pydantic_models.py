@@ -1,4 +1,5 @@
 from core.models.json_schema import ApplicationModel
+from pydantic import BaseModel, Field, ValidationError, ConfigDict
 
 # Пример JSON данных
 json_data = {
@@ -61,7 +62,7 @@ json_data = {
 
 # Валидация данных
 try:
-    model = ApplicationModel(**json_data)
+    model = ApplicationModel(ConfigDict(json_schema_extra=json_data))
     print("Данные валидны!")
 except Exception as e:
     print(f"Ошибка валидации: {e}")
