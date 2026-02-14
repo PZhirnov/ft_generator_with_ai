@@ -19,6 +19,7 @@ filter_row_with_fields = ['deleteCascadeEnable',]
 def data_in_node(node_dict, number=""):
     pos = 0
     for node in node_dict:
+        if len(node.keys()) == 1: break
         type_node = node.get('type')
         pos += 1
         print_node_row = {}
