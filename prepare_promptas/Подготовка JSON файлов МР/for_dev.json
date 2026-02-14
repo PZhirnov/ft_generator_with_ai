@@ -1,0 +1,2925 @@
+{
+    "rules": [],
+    "actions": [],
+    "objects": [],
+    "editForm": {
+        "layout": {
+            "verticalLayout": true
+        },
+        "components": [
+            {
+                "name": "formSections1",
+                "type": "FormSections",
+                "children": [
+                    {
+                        "name": "formSection1",
+                        "type": "FormSection",
+                        "title": "Свойства документа",
+                        "children": [
+                            {
+                                "name": "mainDetail",
+                                "type": "Details",
+                                "title": "Сведения о документе в системе",
+                                "compact": true,
+                                "bordered": true,
+                                "children": [
+                                    {
+                                        "name": "row11",
+                                        "type": "Row",
+                                        "gutter": 8,
+                                        "children": [
+                                            {
+                                                "name": "col11",
+                                                "span": 16,
+                                                "type": "Col",
+                                                "children": [
+                                                    {
+                                                        "name": "systemNumberField",
+                                                        "type": "NumberField",
+                                                        "label": "Номер",
+                                                        "children": [],
+                                                        "readOnly": true,
+                                                        "required": true,
+                                                        "dataField": "systemNumber"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "name": "col21",
+                                                "span": 8,
+                                                "type": "Col",
+                                                "children": [
+                                                    {
+                                                        "name": "docDateField",
+                                                        "type": "DateField",
+                                                        "label": "Дата подписания",
+                                                        "children": [],
+                                                        "readOnly": true,
+                                                        "dataField": "docDate",
+                                                        "hideInfinite": true,
+                                                        "verticalLayout": true
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "row8",
+                                        "type": "Row",
+                                        "gutter": 8,
+                                        "children": [
+                                            {
+                                                "name": "col8",
+                                                "span": 16,
+                                                "type": "Col",
+                                                "children": [
+                                                    {
+                                                        "name": "requestNumberField",
+                                                        "rows": 2,
+                                                        "type": "TextField",
+                                                        "label": "Подано в комплекте документов №",
+                                                        "maxRows": 2,
+                                                        "children": [],
+                                                        "readOnly": true,
+                                                        "dataField": "requestNumber",
+                                                        "verticalLayout": true
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "name": "col9",
+                                                "span": 8,
+                                                "type": "Col",
+                                                "children": [
+                                                    {
+                                                        "name": "requestDateField",
+                                                        "type": "DateField",
+                                                        "label": "Дата подписания",
+                                                        "children": [],
+                                                        "readOnly": true,
+                                                        "required": true,
+                                                        "dataField": "requestDate",
+                                                        "hideInfinite": true
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "fieldGroup41",
+                                        "type": "FieldGroup",
+                                        "label": "Причина отказа",
+                                        "hidden": true,
+                                        "children": [
+                                            {
+                                                "name": "row301",
+                                                "type": "Row",
+                                                "gutter": 8,
+                                                "children": [
+                                                    {
+                                                        "name": "col3911",
+                                                        "span": 24,
+                                                        "type": "Col",
+                                                        "children": [
+                                                            {
+                                                                "name": "rejectionCommentField",
+                                                                "rows": 2,
+                                                                "type": "TextField",
+                                                                "label": "Комментарий",
+                                                                "maxRows": 5,
+                                                                "children": [],
+                                                                "readOnly": false,
+                                                                "dataField": "rejectionComment",
+                                                                "inputType": "textarea"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "gridView": false,
+                                "collapsible": true,
+                                "headerBordered": true
+                            },
+                            {
+                                "name": "details2",
+                                "type": "Details",
+                                "title": "Реквизиты документа",
+                                "compact": true,
+                                "bordered": true,
+                                "children": [
+                                    {
+                                        "name": "row12",
+                                        "type": "Row",
+                                        "gutter": 8,
+                                        "children": [
+                                            {
+                                                "name": "col22",
+                                                "span": 8,
+                                                "type": "Col",
+                                                "children": [
+                                                    {
+                                                        "name": "applicationNumberField",
+                                                        "rows": 2,
+                                                        "type": "TextField",
+                                                        "label": "№",
+                                                        "maxRows": 2,
+                                                        "children": [],
+                                                        "readOnly": true,
+                                                        "dataField": "applicationNumber"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "name": "col23",
+                                                "span": 16,
+                                                "type": "Col",
+                                                "children": [
+                                                    {
+                                                        "name": "applicationTypeField",
+                                                        "rows": 2,
+                                                        "type": "TextField",
+                                                        "label": "Тип заявки",
+                                                        "maxRows": 2,
+                                                        "children": [],
+                                                        "readOnly": true,
+                                                        "dataField": "applicationType"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "row13",
+                                        "type": "Row",
+                                        "gutter": 8,
+                                        "children": [
+                                            {
+                                                "name": "col24",
+                                                "span": 8,
+                                                "type": "Col",
+                                                "children": [
+                                                    {
+                                                        "name": "applicationDateField",
+                                                        "type": "DateField",
+                                                        "label": "Дата заявки",
+                                                        "children": [],
+                                                        "readOnly": true,
+                                                        "dataField": "applicationDate"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "name": "col25",
+                                                "span": 16,
+                                                "type": "Col",
+                                                "children": [
+                                                    {
+                                                        "name": "applicationSatatusField",
+                                                        "rows": 2,
+                                                        "type": "TextField",
+                                                        "label": "Статус",
+                                                        "maxRows": 2,
+                                                        "children": [],
+                                                        "readOnly": true,
+                                                        "dataField": "applicationSatatus"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "row14",
+                                        "type": "Row",
+                                        "gutter": 8,
+                                        "children": [
+                                            {
+                                                "name": "col26",
+                                                "span": 8,
+                                                "type": "Col",
+                                                "children": [
+                                                    {
+                                                        "name": "mosRegistryDateField",
+                                                        "type": "DateField",
+                                                        "label": "Дата включения в Мос. Реестр",
+                                                        "children": [],
+                                                        "readOnly": true,
+                                                        "dataField": "mosRegistryDate"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "name": "col27",
+                                                "span": 16,
+                                                "type": "Col",
+                                                "children": [
+                                                    {
+                                                        "name": "organizationTypeField",
+                                                        "rows": 2,
+                                                        "type": "TextField",
+                                                        "label": "Вид организации",
+                                                        "maxRows": 2,
+                                                        "children": [],
+                                                        "readOnly": false,
+                                                        "required": true,
+                                                        "dataField": "organizationType"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "row15",
+                                        "type": "Row",
+                                        "gutter": 8,
+                                        "children": [
+                                            {
+                                                "name": "col28",
+                                                "type": "Col",
+                                                "children": [
+                                                    {
+                                                        "name": "previousAppField",
+                                                        "rows": 2,
+                                                        "type": "TextField",
+                                                        "label": "Предыдущая заявка",
+                                                        "maxRows": 2,
+                                                        "children": [],
+                                                        "readOnly": true,
+                                                        "dataField": "previousApp"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "collapsible": true,
+                                "headerBordered": true
+                            }
+                        ]
+                    }
+                ],
+                "contentWidthMax": 800,
+                "contentWidthMin": 800
+            }
+        ]
+    },
+    "listForm": {
+        "mode": "SPLIT",
+        "filters": [],
+        "cellStyles": [],
+        "dataColumns": [],
+        "deleteCascadeEnable": false
+    },
+    "constUuid": "802725bf-b4a9-4233-bd04-bcd1ff4aec87",
+    "dataModel": {
+        "isView": false,
+        "triggers": [],
+        "tableName": "PAMOSREGISTRYAPPLICATION",
+        "dataFields": [
+            {
+                "name": "mosRegistryDate",
+                "static": true,
+                "children": [],
+                "dataType": "DATE",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Дата включения в Мос. Реестр",
+                "dataConstraint": {
+                    "maxDate": "2100-01-01T00:00:00",
+                    "minDate": "1900-01-01T00:00:00",
+                    "inputMaskChars": []
+                },
+                "fullTextIndexed": false,
+                "hideFilterOptions": false
+            },
+            {
+                "name": "mosRegistryCode",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Код по Московскому реестру",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "fullTextIndexed": false,
+                "hideFilterOptions": false
+            },
+            {
+                "name": "grbsCode",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Код ГРБС",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "fullTextIndexed": false,
+                "hideFilterOptions": false
+            },
+            {
+                "name": "grbsName",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Наименование ГРБС",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "fullTextIndexed": false,
+                "hideFilterOptions": false
+            },
+            {
+                "name": "startDate",
+                "static": true,
+                "children": [],
+                "dataType": "DATE",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Дата начала действия",
+                "dataConstraint": {
+                    "maxDate": "2100-01-01T00:00:00",
+                    "minDate": "1900-01-01T00:00:00"
+                },
+                "fullTextIndexed": false,
+                "hideFilterOptions": false
+            },
+            {
+                "name": "endDate",
+                "static": true,
+                "children": [],
+                "dataType": "DATE",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Дата окончания действия",
+                "dataConstraint": {
+                    "maxDate": "2100-01-01T00:00:00",
+                    "minDate": "1900-01-01T00:00:00"
+                },
+                "fullTextIndexed": false,
+                "hideFilterOptions": false
+            },
+            {
+                "name": "isFounder",
+                "static": true,
+                "children": [],
+                "dataType": "BOOLEAN",
+                "required": true,
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Является учредителем (Сведения об учредителе)",
+                "defaultValue": false,
+                "dataConstraint": {},
+                "fullTextIndexed": false,
+                "defaultValueMode": "CONST",
+                "hideFilterOptions": false
+            },
+            {
+                "name": "isSeparateSub",
+                "static": true,
+                "children": [],
+                "dataType": "BOOLEAN",
+                "required": true,
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Является обособленным подразделением (Сведения об обособленном подразделении)",
+                "defaultValue": false,
+                "dataConstraint": {},
+                "fullTextIndexed": false,
+                "defaultValueMode": "CONST",
+                "hideFilterOptions": false
+            },
+            {
+                "name": "isEstablishmentInfo",
+                "static": true,
+                "children": [],
+                "dataType": "BOOLEAN",
+                "required": true,
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Сведения о создании организации (c участием/без участия города Москвы)",
+                "defaultValue": false,
+                "dataConstraint": {},
+                "fullTextIndexed": false,
+                "defaultValueMode": "CONST",
+                "hideFilterOptions": false
+            },
+            {
+                "name": "inn",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "ИНН",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "fullTextIndexed": false,
+                "hideFilterOptions": false
+            },
+            {
+                "name": "kpp",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "КПП",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "fullTextIndexed": false,
+                "hideFilterOptions": false
+            },
+            {
+                "name": "ogrn",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "ОГРН",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "fullTextIndexed": false,
+                "hideFilterOptions": false
+            },
+            {
+                "name": "consolidatedRegisterCode",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Код по Сводному реестру",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "fullTextIndexed": false,
+                "hideFilterOptions": false
+            },
+            {
+                "name": "registrationFtsDate",
+                "static": true,
+                "children": [],
+                "dataType": "DATE",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Дата постановки на учет в ФНС России (по данным ЕГРЮЛ)",
+                "dataConstraint": {
+                    "maxDate": "2100-01-01T00:00:00",
+                    "minDate": "1900-01-01T00:00:00"
+                },
+                "fullTextIndexed": false,
+                "hideFilterOptions": false
+            },
+            {
+                "name": "unkCode",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Код УНК",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "fullTextIndexed": false,
+                "hideFilterOptions": false
+            },
+            {
+                "name": "taxPayerKpp",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "КПП крупнейшего налогоплательщика (при наличии)",
+                "dataConstraint": {},
+                "fullTextIndexed": false,
+                "hideFilterOptions": false
+            },
+            {
+                "name": "orgType",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Тип организации",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "fullTextIndexed": false,
+                "hideFilterOptions": false
+            },
+            {
+                "name": "institutionType",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Тип учреждения",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "fullTextIndexed": false,
+                "hideFilterOptions": false
+            },
+            {
+                "name": "orgPhone",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Телефон организации",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "fullTextIndexed": false,
+                "hideFilterOptions": false
+            },
+            {
+                "name": "budgetLevel",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Уровень бюджета",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "fullTextIndexed": false,
+                "hideFilterOptions": false
+            },
+            {
+                "name": "budgetLevelName",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Наименование (Уровня бюджета)",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "fullTextIndexed": false,
+                "hideFilterOptions": false
+            },
+            {
+                "name": "budget",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Бюджет",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "fullTextIndexed": false,
+                "hideFilterOptions": false
+            },
+            {
+                "name": "budgetName",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Наименование (Бюджета)",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "fullTextIndexed": false,
+                "hideFilterOptions": false
+            },
+            {
+                "name": "postalCode",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Почтовый индекс",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "fullTextIndexed": false,
+                "hideFilterOptions": false
+            },
+            {
+                "name": "regionCode",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Код региона",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "fullTextIndexed": false,
+                "hideFilterOptions": false
+            },
+            {
+                "name": "rfSubject",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Субъект РФ?",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "fullTextIndexed": false,
+                "hideFilterOptions": false
+            },
+            {
+                "name": "district",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Район",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "fullTextIndexed": false,
+                "hideFilterOptions": false
+            },
+            {
+                "name": "city",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Город",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "fullTextIndexed": false,
+                "hideFilterOptions": false
+            },
+            {
+                "name": "settlement",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Населенный пункт",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "fullTextIndexed": false,
+                "hideFilterOptions": false
+            },
+            {
+                "name": "street",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Улица (проспект, переулок и т.п.)",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "fullTextIndexed": false,
+                "hideFilterOptions": false
+            },
+            {
+                "name": "house",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Дом (владение)",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "fullTextIndexed": false,
+                "hideFilterOptions": false
+            },
+            {
+                "name": "building",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Корпус (строение)",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "fullTextIndexed": false,
+                "hideFilterOptions": false
+            },
+            {
+                "name": "apartment",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Квартира (офис)",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "fullTextIndexed": false,
+                "hideFilterOptions": false
+            },
+            {
+                "name": "name",
+                "static": false,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Наименование",
+                "dataConstraint": {},
+                "hideFilterOptions": false
+            },
+            {
+                "name": "docNumber",
+                "static": false,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Номер",
+                "dataConstraint": {},
+                "hideFilterOptions": false
+            },
+            {
+                "name": "adminDate",
+                "static": false,
+                "children": [],
+                "dataType": "DATE",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Дата",
+                "dataConstraint": {
+                    "maxDate": "2100-01-01T00:00:00",
+                    "minDate": "1900-01-01T00:00:00"
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "issuer",
+                "static": false,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Орган, издавший документ",
+                "dataConstraint": {},
+                "hideFilterOptions": false
+            },
+            {
+                "name": "separateDivisions",
+                "static": false,
+                "children": [
+                    {
+                        "name": "sepDivKpp",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "displayName": "КПП",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false
+                    },
+                    {
+                        "name": "sepDivName",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "displayName": "Наименование",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false
+                    },
+                    {
+                        "name": "sepDivAddres",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "displayName": "Адрес",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false,
+                        "dataFieldLastPublishedName": "sepDivAdres"
+                    },
+                    {
+                        "name": "sepDivType",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "displayName": "Тип",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false
+                    },
+                    {
+                        "name": "registrationNote",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "displayName": "Отметка о регистрации в ЕГРЮЛ (при наличии)",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false
+                    }
+                ],
+                "dataType": "LIST",
+                "fetchMode": "NORMAL",
+                "displayName": "Филиалы/обособленные подразделения",
+                "dataConstraint": {},
+                "hideFilterOptions": false
+            },
+            {
+                "name": "mosRegistryBasisInclusions",
+                "static": false,
+                "children": [
+                    {
+                        "name": "stateContractNumber",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "displayName": "№ государственного контракта (контракта), договора (соглашения), контракта (договора)",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false
+                    },
+                    {
+                        "name": "stateContractDate",
+                        "static": false,
+                        "children": [],
+                        "dataType": "DATE",
+                        "fetchMode": "NORMAL",
+                        "displayName": "Дата государственного контракта (контракта), договора (соглашения), контракта (договора)",
+                        "dataConstraint": {
+                            "maxDate": "2100-01-01T00:00:00",
+                            "minDate": "1900-01-01T00:00:00",
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false,
+                        "dataFieldLastPublishedName": "s"
+                    },
+                    {
+                        "name": "consRegisterPayerCode",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "displayName": "Код плательщика по Сводному реестру",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false,
+                        "dataFieldLastPublishedName": "payerCode"
+                    },
+                    {
+                        "name": "mosRegistryPayerCode",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "displayName": "Код плательщика по Московскому реестру",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false,
+                        "dataFieldLastPublishedName": "mosRegistry"
+                    },
+                    {
+                        "name": "orgName",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "displayName": "Наименование учреждения (организации, плательщика)",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false
+                    }
+                ],
+                "dataType": "LIST",
+                "fetchMode": "NORMAL",
+                "displayName": "Основание для включения в Мос. реестр",
+                "dataConstraint": {},
+                "hideFilterOptions": false
+            },
+            {
+                "name": "okopf",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Код ОКОПФ",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "okopfName",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Наименование ОКОПФ",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "okfs",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Код ОКФС",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "okfsName",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Наименование ОКФС",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "oktmo",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Код ОКТМО",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "oktmoName",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Наименование ОКТМО",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "okpo",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Код ОКПО",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "okogu",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Код ОКОГУ",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "okoguName",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Наименование ОКОГУ",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "industryCode",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Код отрасли",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "ogs",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Код ОГС",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "ppoCode",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Код ППО по ОКТМО",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "ppoName",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Наименование ППО",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "ppoType",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Вид ППО",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "ppoTypeName",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Наименование вида ППО",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "parentOrgOgrn",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "ОГРН вышестоящей организации",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "parentOrgMosRegistryCode",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Код по Мос.реестру вышестоящей организации",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "parentOrgConsRegistryCode",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Код по Сводному реестру вышестоящей организации",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "parentOrgName",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Наименование вышестоящей организации",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "formingMethod",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Способ образования юридического лица",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "formMethodName",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Наименование способа образования",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "founderInformationEgrul",
+                "static": false,
+                "children": [
+                    {
+                        "name": "founderFullName",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "displayName": "Полное наименование",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false
+                    },
+                    {
+                        "name": "founderInn",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "displayName": "ИНН",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false
+                    },
+                    {
+                        "name": "founderOgrn",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "displayName": "ОГРН",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false,
+                        "dataFieldLastPublishedName": "founderKpp"
+                    },
+                    {
+                        "name": "founderStartDate",
+                        "static": false,
+                        "children": [],
+                        "dataType": "DATE",
+                        "fetchMode": "NORMAL",
+                        "displayName": "Дата начала действия",
+                        "dataConstraint": {
+                            "maxDate": "2100-01-01T00:00:00",
+                            "minDate": "1900-01-01T00:00:00",
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false
+                    }
+                ],
+                "dataType": "LIST",
+                "fetchMode": "NORMAL",
+                "displayName": "Сведения об учредителе (участнике) организации (по данным ЕГРЮЛ)",
+                "dataConstraint": {},
+                "hideFilterOptions": false
+            },
+            {
+                "name": "founderInfo",
+                "static": false,
+                "children": [
+                    {
+                        "name": "bkFounderCode",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "calculated": false,
+                        "displayName": "Код главы по БК",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false
+                    },
+                    {
+                        "name": "consRegistryFounderCode",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "calculated": false,
+                        "displayName": "Код по сводному реестру",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false
+                    },
+                    {
+                        "name": "mosRegistryFounderCode",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "calculated": false,
+                        "displayName": "Код по Московскому реестру",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false
+                    },
+                    {
+                        "name": "grbsFounderCode",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "calculated": false,
+                        "displayName": "Наименование главного распорядителя бюджетных средств",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false
+                    }
+                ],
+                "dataType": "LIST",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Сведения об учредителе (участнике) организации",
+                "dataConstraint": {},
+                "hideFilterOptions": false
+            },
+            {
+                "name": "applicationType",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Тип заявки",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "applicationDate",
+                "static": true,
+                "children": [],
+                "dataType": "DATE",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Дата заявки",
+                "dataConstraint": {
+                    "maxDate": "2100-01-01T00:00:00",
+                    "minDate": "1900-01-01T00:00:00"
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "applicationNumber",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "№ (номер заявки)",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "applicationSatatus",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Статус",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "organizationType",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Вид организации",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "previousApp",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Предыдущая заявка",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "adminDocType",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Тип документа",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "adminDocNumber",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Номер",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "adminDocName",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Наименование",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "adminDocIssue",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Орган, издавший документ",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "adminDocDate",
+                "static": true,
+                "children": [],
+                "dataType": "DATE",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Дата",
+                "dataConstraint": {
+                    "maxDate": "2100-01-01T00:00:00",
+                    "minDate": "1900-01-01T00:00:00"
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "orgNameFullNameEgrul",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Полное наименование (по данным ЕГРЮЛ)",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "orgNameShortNameEgrul",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Сокращенное наименование (по данным ЕГРЮЛ)",
+                "dataConstraint": {
+                    "unMaskedValue": false,
+                    "inputMaskChars": []
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "orgNameFirmName",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Фирменное наименование",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "orgNameShortName",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Краткое наименование",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "orgNameFullNameEng",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Полное наименование на английском языке",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "orgNameShortNameEng",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Сокращенное наименование на английском языке",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "tofkCode",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Код ТОФК",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "adminDistrict",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Административный округ",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "ftsLegalAddress",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Юридический адрес в ФНС",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "Structure",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Структура",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "cladrCode",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Код КЛАДР",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "factAddres",
+                "static": false,
+                "children": [
+                    {
+                        "name": "addres",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "displayName": "Адрес",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false
+                    },
+                    {
+                        "name": "omkteCode",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "displayName": "Код ОМКТЕ",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false
+                    },
+                    {
+                        "name": "isMainBuild",
+                        "static": false,
+                        "children": [],
+                        "dataType": "BOOLEAN",
+                        "required": true,
+                        "fetchMode": "NORMAL",
+                        "displayName": "Признак главного здания",
+                        "defaultValue": true,
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "defaultValueMode": "CONST",
+                        "hideFilterOptions": false
+                    }
+                ],
+                "dataType": "LIST",
+                "fetchMode": "NORMAL",
+                "displayName": "Сведения о фактическом адресе основного здания",
+                "dataConstraint": {},
+                "hideFilterOptions": false
+            },
+            {
+                "name": "websiteDomainName",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Доменное имя официального сайта",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "addOrgPhoneNumber",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Дополнительный телефон организации",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "orgEmail",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Адрес электронной почты организации",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "secondName",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Фамилия",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "firstName",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Имя",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "patronymic",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Отчество",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "position",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Должность",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "directorInn",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "ИНН Руководителя",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "directorSnils",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "СНИЛС руководителя",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "isBasic",
+                "static": true,
+                "children": [],
+                "dataType": "BOOLEAN",
+                "required": true,
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Признак основго",
+                "defaultValue": false,
+                "dataConstraint": {},
+                "defaultValueMode": "CONST",
+                "hideFilterOptions": false
+            },
+            {
+                "name": "appointmentDocName",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Наименование документа о назначении руководителя",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "appointmentDocNumber",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Номер документа о назначении руководителя",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "appointmentDocDate",
+                "static": true,
+                "children": [],
+                "dataType": "DATE",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Дата документа о назначении руководителя",
+                "dataConstraint": {
+                    "maxDate": "2100-01-01T00:00:00",
+                    "minDate": "1900-01-01T00:00:00"
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "headInfo",
+                "static": false,
+                "children": [
+                    {
+                        "name": "isBasic",
+                        "static": false,
+                        "children": [],
+                        "dataType": "BOOLEAN",
+                        "required": true,
+                        "fetchMode": "NORMAL",
+                        "displayName": "Признак основго",
+                        "defaultValue": false,
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "defaultValueMode": "CONST",
+                        "hideFilterOptions": false,
+                        "dataFieldLastPublishedName": "isBasicCopy"
+                    },
+                    {
+                        "name": "secondName",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "displayName": "Фамилия",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false,
+                        "dataFieldLastPublishedName": "secondNameCopy"
+                    },
+                    {
+                        "name": "firstName",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "displayName": "Имя",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false
+                    },
+                    {
+                        "name": "patronymic",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "displayName": "Отчество",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false
+                    },
+                    {
+                        "name": "position",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "displayName": "Должность",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false
+                    },
+                    {
+                        "name": "directorInn",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "displayName": "ИНН",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false
+                    },
+                    {
+                        "name": "directorSnils",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "displayName": "СНИЛС",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false
+                    },
+                    {
+                        "name": "appointmentDocName",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "displayName": "Наименование НПА",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false
+                    },
+                    {
+                        "name": "appointmentDocNumber",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "displayName": "Номер НПА",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false
+                    },
+                    {
+                        "name": "appointmentDocDate",
+                        "static": false,
+                        "children": [],
+                        "dataType": "DATE",
+                        "fetchMode": "NORMAL",
+                        "displayName": "Дата НПА",
+                        "dataConstraint": {
+                            "maxDate": "2100-01-01T00:00:00",
+                            "minDate": "1900-01-01T00:00:00",
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false
+                    }
+                ],
+                "dataType": "LIST",
+                "fetchMode": "NORMAL",
+                "displayName": "Информация о руководителе",
+                "dataConstraint": {},
+                "hideFilterOptions": false
+            },
+            {
+                "name": "InfoActivitiTypes",
+                "static": false,
+                "children": [
+                    {
+                        "name": "okvedCode",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "displayName": "Код ОКВЭД",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false
+                    },
+                    {
+                        "name": "economicActivityType",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "displayName": "Наименование вида экономической деятельности",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false
+                    },
+                    {
+                        "name": "activityType",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "displayName": "Тип вида деятельности",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false
+                    },
+                    {
+                        "name": "mosRegistryInclusionDate",
+                        "static": false,
+                        "children": [],
+                        "dataType": "DATE",
+                        "fetchMode": "NORMAL",
+                        "displayName": "Дата включения в Мос.реестр",
+                        "dataConstraint": {
+                            "maxDate": "2100-01-01T00:00:00",
+                            "minDate": "1900-01-01T00:00:00",
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false
+                    }
+                ],
+                "dataType": "LIST",
+                "fetchMode": "NORMAL",
+                "displayName": "Информация о видах деятельности (по данным ЕГРЮЛ)",
+                "dataConstraint": {},
+                "hideFilterOptions": false
+            },
+            {
+                "name": "reorganizationDocNumber",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Номер документа о реорганизации/ликвидации",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "reorganizationDocDate",
+                "static": true,
+                "children": [],
+                "dataType": "DATE",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Дата документа о реорганизации/ликвидации",
+                "dataConstraint": {
+                    "maxDate": "2100-01-01T00:00:00",
+                    "minDate": "1900-01-01T00:00:00"
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "reorganizationDocName",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Наименование документа о реорганизации/ликвидации",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "procedureStartDate",
+                "static": true,
+                "children": [],
+                "dataType": "DATE",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Дата внесения записи о начале процедуры",
+                "dataConstraint": {
+                    "maxDate": "2100-01-01T00:00:00",
+                    "minDate": "1900-01-01T00:00:00"
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "terminationDate",
+                "static": true,
+                "children": [],
+                "dataType": "DATE",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Дата прекращения деятельности",
+                "dataConstraint": {
+                    "maxDate": "2100-01-01T00:00:00",
+                    "minDate": "1900-01-01T00:00:00"
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "reorganizationCode",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Код формы реорганизации",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "reorganizationName",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Наименование формы реорганизации",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "successionInfo",
+                "static": false,
+                "children": [
+                    {
+                        "name": "moscowRegistryCode",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "displayName": "Код по Мос.реестру",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false
+                    },
+                    {
+                        "name": "ogrnEgrul",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "displayName": "ОГРН (по данным ЕГРЮЛ)",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false
+                    },
+                    {
+                        "name": "fullNameEgrul",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "displayName": "Полное наименование (по данным ЕГРЮЛ)",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false
+                    },
+                    {
+                        "name": "innEgrul",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "displayName": "ИНН (по данным ЕГРЮЛ)",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false
+                    },
+                    {
+                        "name": "typeEgrul",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "displayName": "Тип (по данным ЕГРЮЛ)",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false
+                    },
+                    {
+                        "name": "startDateEgrul",
+                        "static": false,
+                        "children": [],
+                        "dataType": "DATE",
+                        "fetchMode": "NORMAL",
+                        "displayName": "Дата начала действия",
+                        "dataConstraint": {
+                            "maxDate": "2100-01-01T00:00:00",
+                            "minDate": "1900-01-01T00:00:00",
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false,
+                        "dataFieldLastPublishedName": "startDate"
+                    },
+                    {
+                        "name": "reason",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "displayName": "Причина",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false
+                    }
+                ],
+                "dataType": "LIST",
+                "fetchMode": "NORMAL",
+                "displayName": "Сведения о правопреемстве",
+                "dataConstraint": {},
+                "hideFilterOptions": false
+            },
+            {
+                "name": "Docs",
+                "static": false,
+                "children": [
+                    {
+                        "name": "fileName",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "displayName": "Имя файла",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false
+                    },
+                    {
+                        "name": "attachmentType",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "displayName": "Тип вложения",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false
+                    },
+                    {
+                        "name": "size",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "displayName": "Размер, Кб",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false
+                    }
+                ],
+                "dataType": "LIST",
+                "fetchMode": "NORMAL",
+                "displayName": "Документы",
+                "dataConstraint": {},
+                "hideFilterOptions": false
+            },
+            {
+                "name": "authority",
+                "static": false,
+                "children": [
+                    {
+                        "name": "authorityCode",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "displayName": "Код полномочия",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false
+                    },
+                    {
+                        "name": "authorityName",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "displayName": "Наименование полномочия",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false
+                    },
+                    {
+                        "name": "authorityStartDate",
+                        "static": false,
+                        "children": [],
+                        "dataType": "DATE",
+                        "fetchMode": "NORMAL",
+                        "displayName": "Дата начала",
+                        "dataConstraint": {
+                            "maxDate": "2100-01-01T00:00:00",
+                            "minDate": "1900-01-01T00:00:00",
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false
+                    },
+                    {
+                        "name": "authorityEndDate",
+                        "static": false,
+                        "children": [],
+                        "dataType": "DATE",
+                        "fetchMode": "NORMAL",
+                        "displayName": "Дата окончания",
+                        "dataConstraint": {
+                            "maxDate": "2100-01-01T00:00:00",
+                            "minDate": "1900-01-01T00:00:00",
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false
+                    },
+                    {
+                        "name": "mosRegistryUnkCode",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "displayName": "Код по Мос.реестру УНК",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false
+                    },
+                    {
+                        "name": "bcHeadCode",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "displayName": "Код главы по БК",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false
+                    },
+                    {
+                        "name": "authorityBudgetName",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "displayName": "Наименование бюджета, в рамках которого передано полномочие",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false,
+                        "dataFieldLastPublishedName": "budgetName"
+                    }
+                ],
+                "dataType": "LIST",
+                "fetchMode": "NORMAL",
+                "displayName": "Полномочия",
+                "dataConstraint": {},
+                "hideFilterOptions": false
+            },
+            {
+                "name": "authorityName",
+                "static": true,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Наименование полномочия",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "mosRegistryUnkCode",
+                "static": false,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "displayName": "Код по Мос.реестру УНК передавшего полномочия",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "isTransferred",
+                "static": true,
+                "children": [],
+                "dataType": "BOOLEAN",
+                "required": true,
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Информация по переданным полномочиям",
+                "defaultValue": false,
+                "dataConstraint": {},
+                "defaultValueMode": "CONST",
+                "hideFilterOptions": false
+            },
+            {
+                "name": "bcHeadCode",
+                "static": false,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "displayName": "Код главы по БК",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "authorityBudgetName",
+                "static": false,
+                "children": [],
+                "dataType": "STRING",
+                "fetchMode": "NORMAL",
+                "displayName": "Бюджет, в рамках которого передано полномочие",
+                "dataConstraint": {
+                    "inputMaskChars": []
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "authorityStartDate",
+                "static": false,
+                "children": [],
+                "dataType": "DATE",
+                "fetchMode": "NORMAL",
+                "displayName": "Дата начала",
+                "dataConstraint": {
+                    "maxDate": "2100-01-01T00:00:00",
+                    "minDate": "1900-01-01T00:00:00"
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "authorityEndDate",
+                "static": false,
+                "children": [],
+                "dataType": "DATE",
+                "fetchMode": "NORMAL",
+                "displayName": "Дата окончания",
+                "dataConstraint": {
+                    "maxDate": "2100-01-01T00:00:00",
+                    "minDate": "1900-01-01T00:00:00"
+                },
+                "hideFilterOptions": false
+            },
+            {
+                "name": "mosPersonalAccountInformation",
+                "static": false,
+                "children": [
+                    {
+                        "name": "personalAccountType",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "calculated": false,
+                        "displayName": "Тип лицевого счета",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false
+                    },
+                    {
+                        "name": "personalAccountNumber",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "calculated": false,
+                        "displayName": "Номер лицевого счета",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false
+                    },
+                    {
+                        "name": "bik",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "calculated": false,
+                        "displayName": "БИК",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false
+                    },
+                    {
+                        "name": "bankNameTofk",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "calculated": false,
+                        "displayName": "Наименование банка/ТОФК",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false,
+                        "dataFieldLastPublishedName": "bankName"
+                    },
+                    {
+                        "name": "correspondentAccount",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "calculated": false,
+                        "displayName": "Корреспондентский счет",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false
+                    },
+                    {
+                        "name": "bankNumber",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "calculated": false,
+                        "displayName": "Номер банковского счета/казначейского счета",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false
+                    },
+                    {
+                        "name": "tofkCode",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "calculated": false,
+                        "displayName": "Код ТОФК",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false,
+                        "dataFieldLastPublishedName": "tofkCode"
+                    },
+                    {
+                        "name": "startDate",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "calculated": false,
+                        "displayName": "Дата открытия",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false,
+                        "dataFieldLastPublishedName": "startDate1"
+                    },
+                    {
+                        "name": "endDate",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "calculated": false,
+                        "displayName": "Дата закрытия",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false,
+                        "dataFieldLastPublishedName": "endDate1"
+                    },
+                    {
+                        "name": "foCode",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "calculated": false,
+                        "displayName": "Код ФО",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false
+                    },
+                    {
+                        "name": "foName",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "calculated": false,
+                        "displayName": "Наименование ФО",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false
+                    }
+                ],
+                "dataType": "LIST",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Сведения о лицевых счетах, открытых организаций в финансовом органе города Москвы",
+                "dataConstraint": {},
+                "hideFilterOptions": false
+            },
+            {
+                "name": "accountInfo",
+                "static": false,
+                "children": [
+                    {
+                        "name": "bik",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "calculated": false,
+                        "displayName": "БИК",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false
+                    },
+                    {
+                        "name": "bankCorrespondentAccount",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "calculated": false,
+                        "displayName": "Номер корр.счета в банка",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false,
+                        "dataFieldLastPublishedName": "correspondentAccount"
+                    },
+                    {
+                        "name": "bankName",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "calculated": false,
+                        "displayName": "Наименование банка",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false,
+                        "dataFieldLastPublishedName": "bankName"
+                    },
+                    {
+                        "name": "bankNumber",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "calculated": false,
+                        "displayName": "Номер банковского счета",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false
+                    },
+                    {
+                        "name": "startDate",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "calculated": false,
+                        "displayName": "Дата открытия",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false,
+                        "dataFieldLastPublishedName": "startDate1"
+                    },
+                    {
+                        "name": "endDate",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "calculated": false,
+                        "displayName": "Дата закрытия",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false,
+                        "dataFieldLastPublishedName": "endDate1"
+                    }
+                ],
+                "dataType": "LIST",
+                "fetchMode": "NORMAL",
+                "calculated": false,
+                "displayName": "Сведения о счетах, открытых организации в кредитных организациях",
+                "dataConstraint": {},
+                "hideFilterOptions": false
+            },
+            {
+                "name": "tofkPersonalAccountInformation",
+                "static": false,
+                "children": [
+                    {
+                        "name": "personalAccountNumber",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "displayName": "Номер лицевого счета",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false
+                    },
+                    {
+                        "name": "personalAccountType",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "displayName": "Тип лицевого счета",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false
+                    },
+                    {
+                        "name": "personalAccountName",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "displayName": "Наименование лицевого счета",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false
+                    },
+                    {
+                        "name": "tofkCode",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "displayName": "Код ТОФК обслуживания",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false,
+                        "dataFieldLastPublishedName": "tofkCode"
+                    },
+                    {
+                        "name": "tofkName",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "displayName": "Наименование ТОФК обслуживания",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false
+                    },
+                    {
+                        "name": "bik",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "displayName": "БИК",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false
+                    },
+                    {
+                        "name": "correspondentAccount",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "displayName": "Корр.счет",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false,
+                        "dataFieldLastPublishedName": "correspondentAccount"
+                    },
+                    {
+                        "name": "bankNumber",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "displayName": "Казначейский счет",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false
+                    },
+                    {
+                        "name": "startDate",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "displayName": "Дата открытия",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false,
+                        "dataFieldLastPublishedName": "startDate1"
+                    },
+                    {
+                        "name": "endDate",
+                        "static": false,
+                        "children": [],
+                        "dataType": "STRING",
+                        "fetchMode": "NORMAL",
+                        "displayName": "Дата закрытия",
+                        "dataConstraint": {
+                            "inputMaskChars": []
+                        },
+                        "hideFilterOptions": false,
+                        "dataFieldLastPublishedName": "endDate1"
+                    }
+                ],
+                "dataType": "LIST",
+                "fetchMode": "NORMAL",
+                "displayName": "Сведения о лицевых счетах, открытых организации в территориальном органе Федерального казначейства (ТОФК)",
+                "dataConstraint": {},
+                "hideFilterOptions": false
+            }
+        ],
+        "displayName": {
+            "displayFields": "requestNumber"
+        },
+        "displayTooltip": {},
+        "dataFieldGroups": [],
+        "validationRules": [],
+        "isFullTextSearch": false,
+        "greenplumReplicatedOption": true
+    },
+    "editForms": [],
+    "extProperties": {
+        "properties": []
+    },
+    "dictNativeKeys": [],
+    "reportTemplates": [],
+    "signedDataSetting": []
+}
